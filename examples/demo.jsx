@@ -1,8 +1,8 @@
 // Action types
-const amountTypes = { 'SAW_CATS': 'SAW_CATS' };
+const amountTypes = { "SAW_CATS": "SAW_CATS" };
 
 // Reducer
-function amountReducer(state, action) {
+const amountReducer = (state, action) => {
   switch (action.type) {
     case amountTypes.SAW_CATS:
       return {
@@ -12,15 +12,15 @@ function amountReducer(state, action) {
     default:
       return state;
   }
-}
+};
 
 // Action creator
-function sawCats(amount) {
+const sawCats = (amount) => {
   return {
     type: amountTypes.SAW_CATS,
     amount
   };
-}
+};
 
 const state = { amount: 0 };
 const store = amountReducer(state, {});

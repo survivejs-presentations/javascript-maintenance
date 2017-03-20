@@ -1,9 +1,9 @@
-'use strict';
-var fs = require('fs');
 
-module.exports = function(source) {
+const fs = require("fs");
+
+module.exports = function () {
   this.cacheable();
-  var callback = this.async();
+  const callback = this.async();
 
-  fs.readFile(this.resource, 'utf-8', callback);
+  fs.readFile(this.resource, "utf-8", callback);
 };

@@ -24,7 +24,7 @@ module.exports = {
     publicPath: "/dist/"
   },
   resolve: {
-    extensions: ["", ".jsx", ".js"]
+    extensions: [".jsx", ".js"]
   },
   resolveLoader: {
     alias: {
@@ -32,7 +32,6 @@ module.exports = {
     }
   },
   plugins: [
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       "process.env": {
         "NODE_ENV": JSON.stringify("production")
@@ -57,7 +56,7 @@ module.exports = {
       loader: "style-loader!css-loader"
     }, {
       test: /\.gif$/,
-      loader: "url?limit=10000&mimetype=image/svg+xml",
+      loader: "url-loader?limit=10000&mimetype=image/svg+xml",
       include: PATHS.images
     }, {
       test: /\.(png|jpg)$/,
@@ -65,7 +64,7 @@ module.exports = {
       include: PATHS.images
     }, {
       test: /\.svg$/,
-      loader: "url?limit=10000&mimetype=image/svg+xml",
+      loader: "url-loader?limit=10000&mimetype=image/svg+xml",
       include: PATHS.images
     }]
   }
