@@ -183,7 +183,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Link href="http://www.survivejs.com/">
+          <Link href="https://www.survivejs.com/">
             <Heading size={1}>
               SurviveJS
             </Heading>
