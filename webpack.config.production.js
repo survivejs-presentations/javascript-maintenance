@@ -4,7 +4,6 @@ var path = require("path");
 var webpack = require("webpack");
 
 const PATHS = {
-  images: path.join(__dirname, 'images'),
   presentation: [
     path.join(__dirname, 'index.js'),
     path.join(__dirname, 'images', 'index.js'),
@@ -56,16 +55,13 @@ module.exports = {
       loader: "style-loader!css-loader"
     }, {
       test: /\.gif$/,
-      loader: "url-loader?limit=10000&mimetype=image/svg+xml",
-      include: PATHS.images
+      loader: "url-loader?limit=10000&mimetype=image/svg+xml"
     }, {
       test: /\.(png|jpg)$/,
-      loader: "url-loader?limit=8192",
-      include: PATHS.images
+      loader: "url-loader?limit=8192"
     }, {
       test: /\.svg$/,
-      loader: "url-loader?limit=10000&mimetype=image/svg+xml",
-      include: PATHS.images
+      loader: "url-loader?limit=10000&mimetype=image/svg+xml"
     }]
   }
 };
