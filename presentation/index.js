@@ -7,7 +7,7 @@ import {
   Appear,
   BlockQuote,
   //Cite,
-  CodePane as OriginalCodePane,
+  CodePane,
   Deck,
   //Fill,
   Heading,
@@ -25,7 +25,6 @@ import {
   TableItem,
   //Text
 } from "spectacle";
-import styled from "styled-components";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -53,10 +52,7 @@ const theme = createTheme({
   tertiary: "#09b5c4",
   quarternary: "rgba(255, 219, 169, 0.43)",
 });
-
-const CodePane = styled(OriginalCodePane)`
-  font-size: 75%;
-`;
+theme.screen.components.codePane.fontSize = "50%";
 
 export default class Presentation extends React.Component {
   render() {
