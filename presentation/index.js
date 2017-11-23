@@ -341,6 +341,62 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Considerations</Heading>
+          <List>
+            <Appear>
+              <ListItem>Which browsers and Node versions to support?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                What if we want to use custom language features?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>What if we want to use some other language?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                How to support tree shaking of modern bundlers?
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Communicating Where Code Should Work
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Simple answer for Node - the <i>engines</i> field
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>This doesn't work with the browsers, though!</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                If you use JavaScript, then the client can use{" "}
+                <Link href="https://www.npmjs.com/package/babel-preset-env">
+                  babel-preset-env
+                </Link>{" "}
+                and{" "}
+                <Link href="https://www.npmjs.com/package/browserslist">
+                  browserslist
+                </Link>{" "}
+                to compile to the needed targets
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Set up a <i>postinstall</i> script to compile during development
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -350,6 +406,38 @@ export default class Presentation extends React.Component {
               Standalone Builds
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>How Bundlers Work</Heading>
+          <Image src={images.bundler} margin="40px auto" height="364px" />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Considerations</Heading>
+          <List>
+            <Appear>
+              <ListItem>Not needed always</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                If generated, enables bundler optimizations (skip compilation in
+                webpack for example)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Use UMD for legacy support (likely disappears with the new
+                standards)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                A standalone bundle can be pushed to a Content Delivery Network
+                (CDN)
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
