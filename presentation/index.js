@@ -189,6 +189,67 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2}>What Files Are Included</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Code, metadata (package.json), documentation (README.md),
+                license
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Larger projects have contribution instructions, changelog,
+                CI/git/npm/lint/build configuration
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <b>package.json</b> - Only JSON (no comments :(), understand
+                this well
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>package.json</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                <i>scripts</i> - <code>npm run {`<name>`}</code>,{" "}
+                <code>pre</code>, <code>post</code>, shortcuts (<code>
+                  npm start
+                </code>, <code>npm t</code>)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <i>bin</i>, <i>main</i>, <i>module</i> - Entry points
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <i>dependencies</i>, <i>devDependencies</i>,{" "}
+                <i>peerDependencies</i> - Depends on the context! Also more
+                types.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <i>repository</i>, <i>homepage</i>, <i>bugs</i> - Links
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Even more fields, sometimes tooling metadata</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>At minimum, publish files needed to run</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -198,6 +259,75 @@ export default class Presentation extends React.Component {
               Publishing Packages
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>SemVer Explained</Heading>
+          <List>
+            <Appear>
+              <ListItem>SemVer === {`<major>.<minor>.<patch>`}</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>ComVer === {`<not compatible>.<compatible>`}</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>EmoVer === {`<emotional>.<major>.<minor>`}</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>What Files Are Included</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                <code>
+                  npm version{" "}
+                  {`<x.y.z|(pre)major|(pre)minor|(pre)patch|prerelease>`}
+                </code>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Publish pre-release versions to gather feedback
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Version ranges - ^, ~, * (dangerous!), also {`>=`} and {`<`}
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Use <b>lockfiles</b> (<i>package-lock.json</i>) to manage
+                (npm5+, yarn)
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>More to Consider</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Deprecating - <code>npm deprecate</code>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Unpublishing - Possibly only first 24h (hello <b>leftpad</b>)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Renaming - See deprecation</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Sharing authorship - Consider namespaces and teams
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
