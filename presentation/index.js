@@ -990,10 +990,21 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>Change Log !== Commit Log</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Document intent of the changes - what's new, what broke, how to
+                migrate
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                A part of DX - saves time of developers when done well
+              </ListItem>
             </Appear>
           </List>
         </Slide>
