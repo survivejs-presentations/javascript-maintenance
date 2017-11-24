@@ -1098,10 +1098,27 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2} fit>
+            What Documentation to Provide?
+          </Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Contribution guidelines - how to set up the project, how to
+                develop, what kind of contributions do you expect?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Code of Conduct - how to collaborate together, what's acceptable
+                and what's not?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Issue and Pull Request templates - how to write an issue or a
+                pull request?
+              </ListItem>
             </Appear>
           </List>
         </Slide>
