@@ -809,9 +809,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            What to Consider?
-          </Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
               <ListItem>
@@ -847,12 +845,22 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>How to test against different environments?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to deploy to staging/production?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to prevent deploying something broken?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Answer: Continuous Integration (CI) and Continuous Deployment
+                (CD) systems
+              </ListItem>
             </Appear>
           </List>
         </Slide>
@@ -869,12 +877,52 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>What to Automate?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Change logs (semi-automation) - Requires commit message
+                convention but helps with communication
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Releases - Release after each commit to the <code>master</code>{" "}
+                branch and determine type of release automatically based on the
+                changes
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Testing - Git hooks help here. Consider{" "}
+                <Link href="https://www.npmjs.com/package/husky">husky</Link>,{" "}
+                <Link href="https://www.npmjs.com/package/lint-staged">
+                  lint-staged
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                GitHub meta validation -{" "}
+                <Link href="https://www.npmjs.com/package/gh-lint">
+                  gh-lint
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Project validation -{" "}
+                <Link href="https://github.com/danger/danger-js">Danger</Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Issue management -{" "}
+                <Link href="https://github.com/open-bot/open-bot">
+                  open-bot
+                </Link>{" "}
+                and more
+              </ListItem>
             </Appear>
           </List>
         </Slide>
@@ -902,9 +950,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -924,9 +970,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -946,9 +990,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -968,9 +1010,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -990,9 +1030,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -1012,9 +1050,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -1045,9 +1081,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
@@ -1067,9 +1101,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            TODO
-          </Heading>
+          <Heading size={2}>TODO</Heading>
           <List>
             <Appear>
               <ListItem>TODO</ListItem>
