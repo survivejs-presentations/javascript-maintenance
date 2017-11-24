@@ -1135,10 +1135,30 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2} fit>
+            Lint and Format Documentation
+          </Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Why - link validation, consistent terminology, improved language
+                and grammar
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Starting points -{" "}
+                <Link href="https://textlint.github.io/">textlint</Link>,{" "}
+                <Link href="http://proselint.com/">proselint</Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="https://www.npmjs.com/package/prettier">
+                  Prettier
+                </Link>{" "}
+                can format Markdown too
+              </ListItem>
             </Appear>
           </List>
         </Slide>
