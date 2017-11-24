@@ -1021,10 +1021,28 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>Conversion - first chance to convert.</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Documentation - communicate how to use the project and how to
+                develop it.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Showcase - show how the project is being used to inspire
+                developers.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Testing - test the site as any software.</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Hosting - free options for static sites.</ListItem>
             </Appear>
           </List>
         </Slide>
