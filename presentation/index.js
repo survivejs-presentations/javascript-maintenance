@@ -1186,10 +1186,24 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>Who is going to develop/fund/manage?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>What happens if developers disappear?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to attract new contributors?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                How to keep track of everything that's going on?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to maintain a popular project?</ListItem>
             </Appear>
           </List>
         </Slide>
