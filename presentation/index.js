@@ -1059,10 +1059,29 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Philosophy - explain high-level ideas of the solution.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Typing - can you extract type information to documentation?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Specific details - how something specific works and how parts
+                fit together
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                User experience - different users need different kind of
+                documentation.
+              </ListItem>
             </Appear>
           </List>
         </Slide>
