@@ -342,7 +342,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>Considerations</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
               <ListItem>Which browsers and Node versions to support?</ListItem>
@@ -414,10 +414,10 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>Considerations</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>Not needed always</ListItem>
+              <ListItem>Is a standalone build needed?</ListItem>
             </Appear>
             <Appear>
               <ListItem>
