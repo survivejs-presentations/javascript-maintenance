@@ -568,25 +568,82 @@ export default class Presentation extends React.Component {
           <Heading size={2}>The Value of Typing</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Improved communication - if you know a type, communicate it
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Better auto-completion and refactoring</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                New techniques - <b>property based testing</b>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>More information for interpreter</ListItem>
             </Appear>
           </List>
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>Flow</Heading>
+          <Image src={images.flow} margin="40px auto" height="100px" />
+
           <List>
             <Appear>
-              <ListItem>TODO: image, example, description</ListItem>
+              <ListItem>
+                <Link href="https://flow.org/">Flow</Link> is a type checker, a
+                separate tool to run
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Type as you go</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                See also{" "}
+                <Link href="https://www.npmjs.com/package/flow-coverage-report">
+                  flow-coverage-report
+                </Link>{" "}
+                and{" "}
+                <Link href="https://www.npmjs.com/package/flow-runtime">
+                  flow-runtime
+                </Link>
+              </ListItem>
             </Appear>
           </List>
+          <Appear>
+            <CodePane
+              lang="javascript"
+              source={require("raw-loader!../examples/flow.js")}
+              margin="20px auto"
+              overflow="overflow"
+            />
+          </Appear>
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TypeScript</Heading>
+          <Image src={images.typeScript} margin="40px auto" height="200px" />
+
           <List>
             <Appear>
-              <ListItem>TODO: image, example, description</ListItem>
+              <ListItem>
+                <Link href="https://www.typescriptlang.org/">TypeScript</Link>{" "}
+                is a language that compiles to JavaScript
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Some commonalities with Flow but also custom features
+                (interfaces, classes)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="https://github.com/niieani/typescript-vs-flowtype">
+                  See the comparison by Bazyli Brzóska
+                </Link>
+              </ListItem>
             </Appear>
           </List>
         </Slide>
@@ -595,7 +652,29 @@ export default class Presentation extends React.Component {
           <Heading size={2}>Type Definitions</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Third party packages require <b>type definitions</b> to capture
+                type errors related to them
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Easy to generate especially with TypeScript</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="http://definitelytyped.org/">DefinitelyTyped</Link>{" "}
+                and{" "}
+                <Link href="https://github.com/flowtype/flow-typed">
+                  flow-typed
+                </Link>{" "}
+                host the definitions
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Problems: keeping up with package versions, something to
+                maintain
+              </ListItem>
             </Appear>
           </List>
         </Slide>
@@ -604,7 +683,21 @@ export default class Presentation extends React.Component {
           <Heading size={2}>Challenges of Typing</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Versioning - what if language definition changes?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Package versions - how to manage conflicting dependencies?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Better solution? -{" "}
+                <Link href="https://reasonml.github.io/">Reason</Link> provides
+                programmable type definitions
+              </ListItem>
             </Appear>
           </List>
         </Slide>
