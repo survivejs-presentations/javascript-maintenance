@@ -717,98 +717,31 @@ export default class Presentation extends React.Component {
           <Heading size={2}>What to Verify with Testing?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                Do parts of the system work in isolation/together?
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Does the system perform well enough?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Does the old API of the system still work?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Do the tests cover the system well?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>What's the quality of the tests?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Does the system solve user problems?</ListItem>
             </Appear>
           </List>
         </Slide>
 
         <Slide transition={slideTransition}>
           <Heading size={2}>Types of Testing</Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO: image</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            Acceptance and End to End Testing
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2}>Integration Testing</Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2}>Unit Testing</Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2}>Property Based Testing</Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            Static Analysis, Security and Regression Testing
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            Performance, Mutation, Package, Smoke Testing
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2} fit>
-            Code Coverage, Complexity, Size
-          </Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2}>Design by Contract</Heading>
-          <List>
-            <Appear>
-              <ListItem>TODO</ListItem>
-            </Appear>
-          </List>
+          <Image src={images.testTower} margin="40px auto" height="464px" />
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
