@@ -761,7 +761,27 @@ export default class Presentation extends React.Component {
           </Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                A single broken dependency can bring down a project
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Constant progress - a challenge to keep up with the updates
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Bigger projects may provide <b>codemods</b> and migration paths
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Specific tooling exists to help with the problem
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Good tests help a lot</ListItem>
             </Appear>
           </List>
         </Slide>
