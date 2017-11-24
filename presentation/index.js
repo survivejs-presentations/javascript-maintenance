@@ -1220,10 +1220,28 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>
+                To market or not? Is popularity a goal? Might happen anyway if
+                you connect with a market.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Approaches - technical marketing, content marketing, word of
+                mouth
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>The point of marketing - serving people</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Marketing isn't about getting everyone to use your project, it's
+                about getting the <b>right</b> people to use your project
+              </ListItem>
             </Appear>
           </List>
         </Slide>
