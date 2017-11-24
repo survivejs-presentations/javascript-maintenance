@@ -950,10 +950,30 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>TODO</Heading>
+          <Heading size={2}>What to Consider?</Heading>
           <List>
             <Appear>
-              <ListItem>TODO</ListItem>
+              <ListItem>Who is going to use the README?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Conversion - Explain clearly what the project is about.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Developer eXperience (DX) - Make it easy to get started and use
+                the project.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Licensing - Make license terms clear.</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Testing - Make sure README examples are executed as tests so
+                they work.
+              </ListItem>
             </Appear>
           </List>
         </Slide>
