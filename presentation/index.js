@@ -171,8 +171,8 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Leverage npm lookup, possible to intercept and modify (be
-                careful!)
+                Leverage npm package lookup algorithm, possible to intercept and
+                modify (be careful!)
               </ListItem>
             </Appear>
           </List>
@@ -277,7 +277,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>What Files Are Included</Heading>
+          <Heading size={2}>Publishing a Version</Heading>
           <List>
             <Appear>
               <ListItem>
@@ -421,14 +421,13 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                If generated, enables bundler optimizations (skip compilation in
-                webpack for example)
+                If generated, enables bundler optimizations (Example: skip
+                compilation in webpack)
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Use UMD for legacy support (likely disappears with the new
-                standards)
+                Use UMD for legacy support (likely disappears eventually)
               </ListItem>
             </Appear>
             <Appear>
@@ -462,6 +461,54 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Can You See the Problem?</Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw-loader!../examples/bad-code.js")}
+            margin="20px auto"
+            overflow="overflow"
+          />
+          <Appear>
+            <div>Eat croissants anyway! This should be</div>
+          </Appear>
+          <Appear>
+            <CodePane
+              lang="javascript"
+              source={require("raw-loader!../examples/good-code.js")}
+              margin="20px auto"
+              overflow="overflow"
+            />
+          </Appear>
+          <Appear>
+            <div>to avoid eating too many croissants.</div>
+          </Appear>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Lint to Spot Problems</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                <Link href="https://eslint.org/">ESLint</Link> to rescue
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Ready-made presets (Airbnb, Standard, ...) and specific plugins
+                (best practices for React, security etc.)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="https://palantir.github.io/tslint/">TSLint</Link>{" "}
+                for TypeScript,{" "}
+                <Link href="https://stylelint.io/">Stylelint</Link> for CSS
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -471,6 +518,39 @@ export default class Presentation extends React.Component {
               Code Formatting
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Linting !== Formatting</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                A linter can capture <i>some</i> formatting related problems
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Specific tools -{" "}
+                <Link href="http://editorconfig.org/">EditorConfig</Link>,{" "}
+                <Link href="https://prettier.io/">Prettier</Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Code (JavaScript, CSS) and configuration (JSON) can be
+                automatically formatted. One less worry.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>The tooling doesn't capture all concerns</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Consider higher level aspects such as patterns, naming
+                separately. Automate when possible.
+              </ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -484,6 +564,51 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2}>The Value of Typing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Flow</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO: image, example, description</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>TypeScript</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO: image, example, description</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Type Definitions</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Challenges of Typing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -495,6 +620,104 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2}>What to Verify with Testing?</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Types of Testing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO: image</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Acceptance and End to End Testing
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Integration Testing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Unit Testing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Property Based Testing</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Static Analysis, Security and Regression Testing
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Performance, Mutation, Package, Smoke Testing
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Code Coverage, Complexity, Size
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2}>Design by Contract</Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -504,6 +727,17 @@ export default class Presentation extends React.Component {
               Dependency Management
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            Keeping Dependencies Up to Date
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -528,6 +762,33 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            What to Consider?
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                How to track issues (what data, how to capture)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to manage changes (pull requests)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                How to develop (branching model, coordination)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to maintain project focus</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>How to support users</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -539,6 +800,17 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -548,6 +820,17 @@ export default class Presentation extends React.Component {
               Automation
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -572,6 +855,17 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -581,6 +875,17 @@ export default class Presentation extends React.Component {
               Change Logs
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -594,6 +899,17 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -603,6 +919,17 @@ export default class Presentation extends React.Component {
               API Documentation
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -616,6 +943,17 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -625,6 +963,17 @@ export default class Presentation extends React.Component {
               Linting and Formatting
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -649,6 +998,17 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             <Link
@@ -658,6 +1018,17 @@ export default class Presentation extends React.Component {
               Marketing
             </Link>
           </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={2} fit>
+            TODO
+          </Heading>
+          <List>
+            <Appear>
+              <ListItem>TODO</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition}>
