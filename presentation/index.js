@@ -155,6 +155,11 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>Develop your own package</ListItem>
             </Appear>
+            <Appear>
+              <ListItem>
+                <b>Note:</b> "you do" vs. "they do". Accountability!
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
 
@@ -163,7 +168,7 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem>
-                Consumption workflow - during development, in production
+                Package consumption - during development, in production
               </ListItem>
             </Appear>
             <Appear>
@@ -294,13 +299,14 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Version ranges - ^, ~, * (dangerous!), also {`>=`} and {`<`}
+                Version ranges - ^, ~, * (dangerous!), also {`>=`}, {`<`} and
+                combinations, …
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Use <b>lockfiles</b> (<i>package-lock.json</i>) to manage
-                (npm5+, yarn)
+                Use <b>lockfiles</b> (<i>package-lock.json</i>, <i>yarn.lock</i>)
+                to manage (npm5+, yarn)
               </ListItem>
             </Appear>
           </List>
@@ -777,7 +783,12 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Specific tooling exists to help with the problem
+                Specific tooling exists to help with the problem. Examples:{" "}
+                <code>yarn upgrade-interactive</code>,{" "}
+                <Link href="https://www.npmjs.com/package/npm-upgrade">
+                  npm-upgrade
+                </Link>,{" "}
+                <Link href="https://www.npmjs.com/package/updtr">updtr</Link>
               </ListItem>
             </Appear>
             <Appear>
@@ -1074,7 +1085,7 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>
                 Specific details - how something specific works and how parts
-                fit together
+                fit together, typical use cases.
               </ListItem>
             </Appear>
             <Appear>
