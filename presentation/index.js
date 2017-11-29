@@ -322,7 +322,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Unpublishing - Possibly only first 24h (hello <b>leftpad</b>)
+                Unpublishing - Possible only first 24h (hello <b>leftpad</b>)
               </ListItem>
             </Appear>
             <Appear>
