@@ -1258,7 +1258,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Link href="https://www.survivejs.com/webpack/">
+          <Link href="https://www.survivejs.com/maintenance/">
             <Heading size={1}>SurviveJS - Maintenance</Heading>
           </Link>
           <Image src={images.survivejs} margin="0px auto 40px" height="324px" />
